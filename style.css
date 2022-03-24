@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#yoshi{
+  width: 60px;
+  height: 60px;
+  background-image: url(marioeYoshi-depositphotos-bgremover.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+
+.pipe {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(planta-depositphotos-bgremover.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.game-over{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(gameover.jpg);
+}
+
+#background{
+  position: absolute;
+  bottom: 0;
+  background-image: url(bg.jpg);
+  background-size: contain;
+  background-repeat: repeat-x;
+  animation: slideRight 1000s infinite linear;
+  width: 100vw;
+  height: 100vh;
+}
+.tryAgain{
+  width: 100px;
+  height: 30px;
+}
+.tryAgain:hover{
+  cursor: pointer;
+}
+  
+@keyframes slideRight {
+  from { background-position: 70000%; }
+  to { background-position: 0%; }
+}
